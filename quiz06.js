@@ -44,5 +44,9 @@ applyCoupon(userBCart, coupon);
 // Deep+Shallow 복사는 대표 객체는 복사하지만 하위 객체는 참조만 한다.
 // const userBCart = Object.assign({}, userACart);로 userBCart를 선언/할당해도 하위 items의 객체들은 참조만 되기 때문에 두 객체 모두 적용된다.
 
-// 재귀함수, JSON.stringify() 등 Deep 복사 방법으로 userBCart를 선언/할당해야한다.
+// 재귀함수, JSON.parse, JSON.stringify 등 Deep 복사 방법으로 userBCart를 선언/할당해야한다.
 // 아니면 그냥 userACart 프로퍼티를 userBCart에 복사해서 넣어주면..? 찝찝하지만 되긴 한다...
+
+//JSON 메서드를 사용하면 함수는 복사할 수 없다!
+
+//깊은 복사 -> structuredClone() 찾아보기!
