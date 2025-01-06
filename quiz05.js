@@ -20,17 +20,17 @@ function calcNums(num1, sign, num2) {
 
 const scores = [36, 62, 72, 55, 86, 95, 92, 48, 81];
 
-function fixScores(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = calcNums(arr[i], '+', 3);
-  }
-}
-
 // function fixScores(arr) {
-//   arr.forEach((num) => {
-//     num += 3;
-//   });
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i] = calcNums(arr[i], '+', 3);
+//   }
 // }
+
+function fixScores(arr) {
+  arr.forEach((num, i) => {
+    arr[i] += 3;
+  });
+}
 
 fixScores(scores);
 console.log(scores);

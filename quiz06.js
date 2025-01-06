@@ -16,12 +16,16 @@ const userACart = {
   ],
 };
 
-const userBCart = {
-  items: [
-    { name: '키보드', price: 30000 },
-    { name: '마우스', price: 20000 },
-  ],
-};
+// const userBCart = {
+//   items: [
+//     { name: '키보드', price: 30000 },
+//     { name: '마우스', price: 20000 },
+//   ],
+// };
+
+// const userBCart = {...userACart}
+// userBCart.items = [];
+
 const coupon = { discount: 5000 };
 
 applyCoupon(userBCart, coupon);
